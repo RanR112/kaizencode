@@ -1,0 +1,62 @@
+.services {
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 2rem 0;
+
+    .content-title {
+        justify-content: center;
+        width: 110%;
+        margin-left: -5%;
+        background: var(--BlueColor);
+        box-shadow: 0 4px 10px rgba($color: #000000, $alpha: 0.3);
+
+        h1 {
+            text-align: center;
+            color: var(--whiteColor);
+            font-size: 2.5rem;
+
+            @media (max-width: 1000px) {
+                font-size: 2.2rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 2rem;
+            }
+
+            @media (max-width: 450px) {
+                font-size: 1.65rem;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 1.5rem;
+            }
+
+            @media (max-width: 360px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .content {
+        margin-top: 2rem;
+        justify-content: center;
+        margin-bottom: 3rem;
+        
+        .content-card {
+            align-items: center;
+            justify-content: center;
+            // gap: 2rem;
+            grid-template-columns: repeat(3,1fr);
+
+            @media (max-width: 1000px) {
+                // gap: 1rem;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 1.2rem;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', serif;
+}
+
+
+/* Colors & Styling */
+:root {
+    --PrimaryColor: rgb(255, 255, 255);
+    --SecondaryColor: rgb(201, 201, 201);
+    --BlueColor: #0c457b;
+    --BlueTransparent: rgba(94, 185, 241, 0.1);
+    /* --StarsBG: radial-gradient(ellipse at bottom, #29638F 0%, #1E4497 100%); */
+    --StarsBG: radial-gradient(ellipse at bottom, #0052A2 0%,#002346 100%);
+    --bgtransparent : rgba(255, 255, 255, 0.75);
+    --whiteColor: rgb(255, 255, 255);
+    --blackColor: rgb(0, 0, 0);
+    --textColor: rgb(55, 55, 58);
+    --whiteColor2: rgb(255, 255, 245);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardHover: radial-gradient(at 88% 40%, #ABD7EC 0px, transparent 85%),
+                    radial-gradient(at 49% 30%, #ABD7EC 0px, transparent 85%),
+                    radial-gradient(at 14% 26%, #ABD7EC 0px, transparent 85%),
+                    radial-gradient(at 0% 64%, #3585DA 0px, transparent 85%),
+                    radial-gradient(at 41% 94%, #1061B0 0px, transparent 85%),
+                    radial-gradient(at 100% 99%, #003C72 0px, transparent 85%);
+    --buttonHover: #1484cd;
+    /* --layer: rgb(49, 89, 134); */
+    --placeH: rgb(132, 132, 132);
+    --GlassColor: rgba(255, 255, 255, 0.1);
+    --GlassBlur: 10px;
+    --GlassShadow: rgba(0, 0, 0, 0.2);
+    --CardShadow: rgba(0, 0, 0, 0.5);
+
+}
+
+[data-theme='dark'] {
+    --PrimaryColor: rgb(27, 27, 27);
+    --SecondaryColor: rgb(64, 64, 64);
+    --BlueColor: rgb(94, 185, 241);
+    --BlueTransparent: rgba(0, 61, 114, 0.2);
+    /* --BlueTransparent: rgb(40, 40, 40); */
+
+    --StarsBG: radial-gradient(ellipse at bottom, #0052A2 0%,#002346 100%);
+    --bgtransparent : rgba(28, 28, 28, 0.75);
+    --whiteColor: rgb(0, 0, 0);
+    --blackColor: rgb(230,230,230);
+    --textColor: rgb(210, 210, 215);
+    --whiteColor2: rgb(26, 26, 26);
+    --greyText: rgb(223, 223, 223);
+    --inputColor: rgb(56, 56, 56);
+    --bodyColor: rgb(87, 87, 87);
+    --cardHover: radial-gradient(at 88% 40%, #031c34 0px, transparent 85%),
+                    radial-gradient(at 49% 30%, #031c34 0px, transparent 85%),
+                    radial-gradient(at 14% 26%, #031c34 0px, transparent 85%),
+                    radial-gradient(at 0% 64%, #0c2744 0px, transparent 85%),
+                    radial-gradient(at 41% 94%, #057399 0px, transparent 85%),
+                    radial-gradient(at 100% 99%, #4281a5 0px, transparent 85%);
+    --buttonHover: #00bfff;
+    /* --layer: rgb(106, 60, 28); */
+    --placeH: rgb(173, 173, 173);
+    --nav: rgb(255,255,255);
+    --GlassColor: rgba(255, 255, 255, 0.1);
+    --GlassBlur: 10px;
+    --GlassShadow: rgba(255, 255, 255, 0.2);
+    --CardShadow: rgba(128, 128, 128, 0.2);
+
+}
+
+.App {
+    color: var(--blackColor);
+    background-color: var(--PrimaryColor);
+    font-size: large;
+    font-weight: bold;
+    /* height: 400vh; */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--whiteColor2);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+.btn {
+    padding: .4rem .8rem;
+    background: var(--PrimaryColor);
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn a {
+    color: var(--blackColor);
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: var(--SecondaryColor);
+}
+
+img, video {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    font-size: 100%;
+}
+
+body {
+    background: var(--bodyColor);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1240px) {
+    .container {
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .section {
+        padding: 6rem 0 4rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    body {
+        zoom: 1.7;
+    }
+}
