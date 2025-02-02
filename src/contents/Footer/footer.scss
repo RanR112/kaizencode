@@ -101,6 +101,12 @@
             @media screen and (max-width: 500px) {
                 font-size: .7rem;
             }
+
+            &:hover {
+                color: var(--BlueColor);
+                transition: 200ms;
+                transform: translateX(2px);
+            }
         }
     }
 
@@ -155,6 +161,12 @@
         
                 @media screen and (max-width: 500px) {
                     width: 1rem;
+                }
+
+                &:hover {
+                    color: var(--BlueColor);
+                    transform: scale(1.1);
+                    transition: 200ms;
                 }
             }
         }

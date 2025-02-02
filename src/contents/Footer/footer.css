@@ -110,6 +110,11 @@
     font-size: 0.7rem;
   }
 }
+.footer .content a:hover {
+  color: var(--BlueColor);
+  transition: 200ms;
+  transform: translateX(2px);
+}
 .footer .footerDiv {
   display: flex;
   justify-content: space-between;
@@ -168,4 +173,9 @@
   .footer .footerDiv .medsos .icon {
     width: 1rem;
   }
+}
+.footer .footerDiv .medsos .icon:hover {
+  color: var(--BlueColor);
+  transform: scale(1.1);
+  transition: 200ms;
 }/*# sourceMappingURL=footer.css.map */
