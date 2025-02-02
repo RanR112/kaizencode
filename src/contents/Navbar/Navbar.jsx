@@ -52,19 +52,19 @@ const Navbar = ({ toggleTheme, theme }) => {
                     <ul className="navLists flex">
 
                         <li className="navItem">
-                            <a href="home" className="navLink">Home</a>
+                            <a href="" className="navLink">Home</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="services" className="navLink">Services</a>
+                            <a href="" className="navLink">Services</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="price" className="navLink">Pricing</a>
+                            <a href="" className="navLink">Pricing</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="contact" className="navLink">Contact</a>
+                            <a href="" className="navLink">Contact</a>
                         </li>
 
                         <li className="navItem">
