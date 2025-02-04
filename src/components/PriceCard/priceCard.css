@@ -9,7 +9,6 @@
   background-image: none;
   border-radius: 1rem;
   cursor: pointer;
-  overflow: hidden;
 }
 .price_card:hover {
   background-image: var(--cardHover);
@@ -45,10 +44,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100% + 1rem);
-  height: calc(100% + 1rem);
+  width: calc(100% + 3px);
+  height: calc(100% + 3px);
   padding: 1rem;
-  background: var(--textColor);
+  background: var(--SecondaryColor);
   border-radius: 1rem;
 }
 .price_card .card__border::before {
