@@ -1,5 +1,5 @@
 .cta-wa {
-    width: 4%;
+    width: 3%;
     position: fixed;
     display: flex;
     bottom: 10px;
@@ -8,7 +8,15 @@
     border-radius: 50%;
     z-index: 2000;
 
+    @media (max-width: 1000px) {
+        width: 4%;
+    }
+
     @media (max-width: 768px) {
+        width: 6%;
+    }
+
+    @media (max-width: 450px) {
         width: 10%;
     }
 

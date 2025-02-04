@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Stars from '../Stars';
 import { useState } from 'react';
 
-const Card = ({ icon, title, desc }) => {
+const Card = ({ icon: Icon, title, desc }) => {
     const [isHover, setHover] = useState(false);
 
     const TrueStar = () => {
@@ -15,7 +15,7 @@ const Card = ({ icon, title, desc }) => {
     }
 
     return (
-        <div className='card'>
+        <div className='card' data-aos="flip-left">
             <div className="containers noselect"  onMouseEnter={TrueStar} onMouseLeave={FalseStar}>
                 <div className="canvas">
                     <div className="tracker tr-1"></div>
@@ -48,11 +48,12 @@ const Card = ({ icon, title, desc }) => {
                             <Stars star={50} sizeNumber={8} visibility={0.0001} Style={{ 
                                 width: "100%",
                                 height: "100%",
-                                position: "absolute"
+                                position: "absolute",
+                                borderRadius: "20px"
                             }}/>
                         </div>) }
                         <div className="icon-card">
-                            {icon}
+                            <Icon/>
                         </div>
                         <div className="title">
                             <h1>{title}</h1>

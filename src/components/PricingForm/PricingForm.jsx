@@ -59,7 +59,7 @@ Catatan: ${notes || '-'}
     };
 
     return (
-        <form className="form flex" onSubmit={handleSubmit}>
+        <form className="form flex" onSubmit={handleSubmit} data-aos="fade-up">
             <button
                 type="button"
                 className="close-button"

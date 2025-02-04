@@ -16,15 +16,16 @@ const Footer = () => {
                     <div className="aboutDiv flex">
                         <div className="about-footer grid" data-aos="fade-up">
                             <h3>ABOUT</h3>
-                            <a href="">Tentang Kami</a>
-                            <a href="">Layanan</a>
-                            <a href="">Harga</a>
-                            <a href="">Kontak</a>
+                            <a href="/">Tentang</a>
+                            <a href="/">Layanan</a>
+                            <a href="/">Produk</a>
+                            <a href="/">Harga</a>
+                            <a href="/">Kontak</a>
                         </div>
                         <div className="pages-footer grid" data-aos="fade-up">
                             <h3>PAGES</h3>
-                            <a href="">Privacy Policy</a>
-                            <a href="">FAQ</a>
+                            <a href="/">Privacy Policy</a>
+                            <a href="/">FAQ</a>
                         </div>
                     </div>
                 </div>

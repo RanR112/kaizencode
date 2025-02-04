@@ -43,28 +43,33 @@ const Navbar = ({ toggleTheme, theme }) => {
             {/* <header className="header flex"> */}
                 <div className="logoDiv flex">
                     <span className="logo flex">
-                        <img src={theme !== 'dark' && scroll ? LogoB : LogoW} alt="logo" className='icon'/>
+                        <a href="/" className='flex'>
+                            <img src={theme !== 'dark' && scroll ? LogoB : LogoW} alt="logo" className='icon'/>
+                        </a>
                     </span>
                 </div>
 
                 {active == 'nav activeNav' ? <div onClick={removeNavbar} className="layer"/> : ''}
                 <div className={active}>
                     <ul className="navLists flex">
-
                         <li className="navItem">
-                            <a href="" className="navLink">Home</a>
+                            <a href="/" className="navLink">Home</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="" className="navLink">Services</a>
+                            <a href="/" className="navLink">Layanan</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="" className="navLink">Pricing</a>
+                            <a href="/" className="navLink">Tentang</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="" className="navLink">Contact</a>
+                            <a href="/" className="navLink">Produk</a>
+                        </li>
+
+                        <li className="navItem">
+                            <a href="/" className="navLink">Hubungi</a>
                         </li>
 
                         <li className="navItem">

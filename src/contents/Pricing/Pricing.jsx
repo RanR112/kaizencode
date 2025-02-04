@@ -23,26 +23,26 @@ const Pricing = () => {
 
     return (
         <section className='pricing' id='pricing'>
-            <div className="pricing-title">
+            <div className="pricing-title" data-aos="fade-up">
                 <h1>Bangun Website Impian Anda Bersama <span>KaizenCode!</span></h1>
             </div>
             <div className="pricing-content grid">
                 {pricingData.map((item, index) => (
-                    <div key={index} className={`${item.paket} price-cards`}>
+                    <div key={index} className={`${item.paket} price-cards`} data-aos="flip-left" data-aos-duration="800">
                         <PriceCard 
                             title={item.detail.title}
                             desc={item.detail.desc}
                             price={item.detail.price}
                             times={item.detail.times}
                             lists={item.detail.lists}
-                            toggleForm={() => toggleForm(item.detail)} // Kirim detail paket ke form
+                            toggleForm={() => toggleForm(item.detail)}
                         />
                     </div>
                 ))}
             </div>
             {isClick && (
                 <div className="pricing-form">
-                    <div className="form-overlay"></div>
+                    <div className="form-overlay" onClick={toggleForm}></div>
                     <PricingForm toggleForm={toggleForm} selectedPricing={selectedPricing} />
                 </div>
             )}

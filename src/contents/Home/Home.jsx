@@ -46,10 +46,10 @@ const Home = () => {
                     backgroundPosition: "center",
                 }}/>
             <div className="homeContent container">
-                <div className="top-text">
+                <div className="top-text" data-aos="fade-up">
                     Partner Digital Terbaik untuk Website Impian Anda
                 </div>
-                <div className="text flex">
+                <div className="text flex" data-aos="fade-up">
                     <div className="text-title">
                         <h1>Jasa Pembuatan Website</h1>
                     </div>
@@ -75,10 +75,10 @@ const Home = () => {
                             />
                     </div>
                 </div>
-                <div className="bottom-text">
+                <div className="bottom-text" data-aos="fade-up">
                     Jadikan Website Anda Lebih dari Sekedar Halaman Online dengan Desain yang Modern, Responsif, dan SEO-Friendly
                 </div>
-                <div className="button flex">
+                <div className="button flex" data-aos="fade-up">
                     <div className="btn-primary flex">
                         <IoMdCreate className='icon'/>
                         <a>Buat Website Sekarang</a>
@@ -91,15 +91,15 @@ const Home = () => {
             </div>
             <div className="block-services">
                 <div className="block-content flex">
-                    <div className="block-item grid">
+                    <div className="block-item grid" data-aos="zoom-in">
                         <img src={IconLP} alt=""/>
                         <p>Landing Page</p>
                     </div>
-                    <div className="block-item grid">
+                    <div className="block-item grid" data-aos="zoom-in">
                         <img src={IconCP} alt=""/>
                         <p>Company Profile</p>
                     </div>
-                    <div className="block-item grid">
+                    <div className="block-item grid" data-aos="zoom-in">
                         <img src={IconCW} alt=""/>
                         <p>Custom Website</p>
                     </div>

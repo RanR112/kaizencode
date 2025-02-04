@@ -1,2 +1,2 @@
-.cta-wa{width:4%;position:fixed;display:flex;bottom:0px;right:20px;color:#109a57;border-radius:50%;z-index:2000}@media(max-width: 768px){.cta-wa{width:10%}}.cta-wa:hover{transform:scale(1.1);transition:200ms}
+.cta-wa{width:3%;position:fixed;display:flex;bottom:10px;right:20px;color:#109a57;border-radius:50%;z-index:2000}@media(max-width: 1000px){.cta-wa{width:4%}}@media(max-width: 768px){.cta-wa{width:6%}}@media(max-width: 450px){.cta-wa{width:10%}}.cta-wa:hover{transform:scale(1.1);transition:200ms}
 /*# sourceMappingURL=whatsapp.min.css.map */
