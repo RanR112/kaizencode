@@ -37,8 +37,8 @@
         position: relative;
         align-items: start;
         width: 40%;
-        min-height: 80vh;
-        max-height: 90vh;
+        min-height: 85vh;
+        max-height: 100vh;
         padding: 30px;
         background: var(--StarsBG);
         border-radius: 8px 0 0 8px;
@@ -46,7 +46,6 @@
         @media (max-width: 350px) {
             width: 50%;
         }
-        // animation: slideIn 1s ease-in-out;
 
         .form-title {
             font-size: 1.25rem;
@@ -186,6 +185,8 @@
                 align-items: center;
                 gap: 0.5rem;
                 font-weight: 600;
+                width: 125%;
+
         
                 .check {
                     display: flex;
@@ -195,6 +196,8 @@
                     height: 1.25rem;
                     background-color: var(--buttonHover);
                     border-radius: 50%;
+                    object-fit: contain;
+
 
                     @media (max-width: 768px) {
                         width: 1rem;
@@ -261,11 +264,13 @@
     }
 
     .form-container {
+        // align-items: start;
+        // position: relative;
+        // min-height: 85vh;
         height: 100%;
         width: 60%;
         padding: 20px;
         border-radius: 8px;
-        overflow: visible !important;
 
         @media (max-width: 700px) {
             padding: 10px;
@@ -519,30 +524,5 @@
                 }
             }
         }
-    }
-}
-
-// @keyframes slideIn {
-//     from {
-//         transform: translateY(-100%);
-//     }
-//     to {
-//         transform: translateY(0);
-//     }
-// }
-
-@keyframes animate {
-    0% {
-        transform: rotate(315deg) translateX(0);
-        opacity: 1;
-    }
-
-    70% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: rotate(315deg) translateX(-1000px);
-        opacity: 0;
     }
 }

@@ -24,31 +24,31 @@
   margin: auto;
   justify-content: center;
   align-items: center;
-  padding: 10rem 0;
+  padding: 11.5rem 0;
 }
 @media (max-width: 1000px) {
   .home .homeContent {
-    padding: 11rem 0;
+    padding: 12.5rem 0;
   }
 }
 @media (max-width: 768px) {
   .home .homeContent {
-    padding: 10rem 0;
+    padding: 12rem 0;
   }
 }
 @media (max-width: 450px) {
   .home .homeContent {
-    padding: 9rem 0;
+    padding: 11.5rem 0;
   }
 }
 @media (max-width: 400px) {
   .home .homeContent {
-    padding: 9rem 0;
+    padding: 11rem 0;
   }
 }
 @media (max-width: 350px) {
   .home .homeContent {
-    padding: 4.5rem 0;
+    padding: 6rem 0;
   }
 }
 .home .homeContent .top-text {
@@ -194,7 +194,6 @@
   color: white;
   font-weight: 700;
   font-size: 1.1rem;
-  cursor: pointer;
 }
 @media (max-width: 1000px) {
   .home .homeContent .button {
@@ -239,6 +238,7 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .home .homeContent .button .btn-primary:hover {
   animation: shine 2s infinite;
@@ -251,6 +251,7 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .home .homeContent .button .btn-secondary:hover {
   animation: shine 2s infinite;
@@ -262,7 +263,7 @@
   width: 70%;
   min-height: -moz-fit-content;
   min-height: fit-content;
-  margin-top: 57vh;
+  margin-top: 60vh;
   border-radius: 15px;
   z-index: 100;
   box-shadow: 0 4px 10px var(--GlassShadow);
@@ -271,13 +272,13 @@
 @media (max-width: 1000px) {
   .home .block-services {
     width: 80%;
-    margin-top: 55vh;
+    margin-top: 57vh;
   }
 }
 @media (max-width: 768px) {
   .home .block-services {
     padding: 0.5rem 0;
-    margin-top: 59vh;
+    margin-top: 63vh;
   }
 }
 .home .block-services .block-content {

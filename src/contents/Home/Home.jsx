@@ -32,7 +32,7 @@ const Home = () => {
 
     return (
         <section className='home' id='home'>
-            <Stars className='stars' star={starsCount} Style={{
+            <Stars className='stars' star={starsCount} sizeNumber={2} Style={{
                     background: "var(--StarsBG)",
                     zIndex: "1",
                     width: "100%",
@@ -44,6 +44,7 @@ const Home = () => {
                     maxHeight: "65vh",
                     boxShadow: "inset 0 0 0 rgba(#000000, 0.5), inset 0 0 0 rgba(#000000, 0.5), inset 0 -6px 10px rgba(#000000, 0.5), inset 0 0 0 rgba(#000000, 0.5)",
                     backgroundPosition: "center",
+                    transform: "scale(1.1)"
                 }}/>
             <div className="homeContent container">
                 <div className="top-text" data-aos="fade-up">

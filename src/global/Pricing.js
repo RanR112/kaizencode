@@ -15,7 +15,6 @@ const pricingData = [
                 '1 Page',
                 'Button CTA (WhatsApp)',
                 'Social Media Icon',
-                'SSL',
                 'Revisi 2x'
             ]
         }

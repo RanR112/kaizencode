@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Stars from '../Stars';
 import './pricingForm.css';
 import PropTypes from 'prop-types';
+import { submit, consultation } from '../../global/Contact';
 
 const PricingForm = ({ toggleForm, selectedPricing }) => {
     // State untuk menyimpan data input
@@ -31,30 +32,12 @@ const PricingForm = ({ toggleForm, selectedPricing }) => {
             return;
         }
 
-        const message = `
-Halo, saya ingin memesan website dengan rincian berikut:
-
-*Paket*: ${selectedPricing.title}
-*Harga*: ${selectedPricing.price} (${selectedPricing.times})
-
-*Data Pemesanan*:
-Nama: ${name}
-WhatsApp: ${whatsapp}
-Perusahaan: ${company}
-Jenis Usaha: ${business}
-Catatan: ${notes || '-'}
-        `.trim();
-
-        const encodedMessage = encodeURIComponent(message);
-        const whatsappURL = `https://wa.me/62895360711551?text=${encodedMessage}`;
-
+        const whatsappURL = submit(selectedPricing, formData);
         window.open(whatsappURL, '_blank');
     };
 
     const handleConsultation = () => {
-        const consultationMessage = "Halo, saya tertarik untuk berkonsultasi mengenai pembuatan website. Bisa kita diskusikan lebih lanjut?";
-        const encodedMessage = encodeURIComponent(consultationMessage);
-        const whatsappURL = `https://wa.me/62895360711551?text=${encodedMessage}`;
+        const whatsappURL = consultation(selectedPricing, formData);
         window.open(whatsappURL, '_blank');
     };
 
@@ -69,11 +52,12 @@ Catatan: ${notes || '-'}
             </button>
             {selectedPricing && (
                 <aside className='aside'>
-                    <Stars star={120} Style={{ 
+                    <Stars star={50} Style={{ 
                         width: "100%",
                         height: "100%",
                         position: "absolute",
-                        left: '0'
+                        left: '0',
+                        top: '0'
                     }}/>
                     <div className="form-title"><span>Paket {selectedPricing.title}</span></div>
                     <div className="title-2 grid"><span>{selectedPricing.price}</span><small>{selectedPricing.times}</small></div>

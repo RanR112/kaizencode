@@ -281,6 +281,11 @@
                             left: 0; 
                         }
                     }
+
+                    .active::after {
+                        width: 100%; 
+                        left: 0; 
+                    }
                 }
             }
         }

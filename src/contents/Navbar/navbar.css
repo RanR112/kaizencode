@@ -263,6 +263,10 @@
     width: 100%;
     left: 0;
   }
+  .header .nav .navLists .navItem .active::after {
+    width: 100%;
+    left: 0;
+  }
 }
 @media screen and (min-width: 960px) {
   .header .nav .navLists .navItem {

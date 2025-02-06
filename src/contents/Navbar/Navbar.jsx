@@ -5,10 +5,14 @@ import LogoB from '../../assets/LogoB.png'
 import LogoW from '../../assets/LogoW.png'
 import Slider from '../../components/Slider';
 import { CgMenuGridO } from "react-icons/cg";
+import { useLocation } from 'react-router-dom';
 
 const Navbar = ({ toggleTheme, theme }) => {
     const [active, setActive] = useState('nav')
     const [scroll, setScroll] = useState(false)
+
+    const location = useLocation();
+    const activePath = location.pathname;
     // Fungsi untuk mengaktifkan navbar
     const showNav = () => {
         setActive('nav activeNav')
@@ -39,12 +43,12 @@ const Navbar = ({ toggleTheme, theme }) => {
     window.addEventListener('scroll', changeColor)
     return (
         <section className="Navbar" id='navbar'>
-            <header className={scroll ? "header scroll flex" : "header flex"}>
+            <header className={!scroll && activePath === "/" ? "header flex" : "header scroll flex"}>
             {/* <header className="header flex"> */}
                 <div className="logoDiv flex">
                     <span className="logo flex">
                         <a href="/" className='flex'>
-                            <img src={theme !== 'dark' && scroll ? LogoB : LogoW} alt="logo" className='icon'/>
+                            <img src={theme !== 'dark' && (scroll || activePath !== "/") ? LogoB : LogoW} alt="logo" className='icon'/>
                         </a>
                     </span>
                 </div>
@@ -53,23 +57,23 @@ const Navbar = ({ toggleTheme, theme }) => {
                 <div className={active}>
                     <ul className="navLists flex">
                         <li className="navItem">
-                            <a href="/" className="navLink">Home</a>
+                            <a href="/" className={`navLink ${activePath === "/" ? "active" : ""}`}>Home</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="/" className="navLink">Layanan</a>
+                            <a href="/" className={`navLink ${activePath === "/tentang-kami" ? "active" : ""}`}>Tentang</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="/" className="navLink">Tentang</a>
+                            <a href="/" className={`navLink ${activePath === "/layanan" ? "active" : ""}`}>Layanan</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="/" className="navLink">Produk</a>
+                            <a href="/" className={`navLink ${activePath === "/produk" ? "active" : ""}`}>Produk</a>
                         </li>
 
                         <li className="navItem">
-                            <a href="/" className="navLink">Hubungi</a>
+                            <a href="/" className={`navLink ${activePath === "/hubungi" ? "active" : ""}`}>Hubungi</a>
                         </li>
 
                         <li className="navItem">
