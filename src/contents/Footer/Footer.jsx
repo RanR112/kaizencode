@@ -3,6 +3,8 @@ import LogoW from "../../assets/LogoW.png"
 import { FaWhatsapp, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
+    let currentYear = new Date().getFullYear()
+
     return (
             <section className='footer' id='FOOTER'>
                 <div className="content flex">
@@ -30,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footerDiv flex">
-                    <small>Copyright &copy; 2025 | KaizenCode</small>
+                    <small>Copyright &copy; {currentYear} | KaizenCode</small>
                     <div className="medsos">
                         <a href="https://www.instagram.com/kaizencode.id/"><FaInstagram className='icon'/></a>
                         <a href="https://www.tiktok.com/@kaizencode"><FaTiktok className='icon'/></a>
