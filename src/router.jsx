@@ -13,7 +13,7 @@ const router = createBrowserRouter([
         element: <TentangKami />
     },
     {
-        path: "*",
+        path: "/*",
         element: <NotFound />
     },
 ]);
